@@ -1,7 +1,14 @@
-# Movie Recommendation App
+# 🎬 Movie Recommendation App
 
-Short description
-This is a full‑stack movie recommendation app: a React + Vite frontend that sends user input to a Node.js backend which uses an AI service and a database to generate and persist movie recommendations.
+An AI-powered full-stack movie recommendation application built with React (Vite) on the frontend and Node.js (Fastify) on the backend. Users enter their movie preferences, and the system generates personalized movie recommendations using an AI service while persisting results in a database.
+
+## ✨ Features
+
+- 🎥 Accepts natural-language movie preferences (e.g., “action movies with a strong female lead”)
+- 🤖 Generates 3–5 AI-powered movie recommendations
+- 💾 Stores user input and recommendations in a database
+- ⚡ Fast and lightweight backend using Fastify
+- 🎨 Modern frontend built with React + Vite
 
 What this project does
 - Accepts user preferences (via [Frontend/src/components/movieForm.jsx](Frontend/src/components/movieForm.jsx))
@@ -9,23 +16,36 @@ What this project does
 - Backend uses AI logic ([Backend/src/config/ai.js](Backend/src/config/ai.js)) and stores results in the DB ([Backend/src/models/recommendation.model.js](Backend/src/models/recommendation.model.js))
 - Controller/service responsibilities are in [Backend/src/controllers/recommendation.controller.js](Backend/src/controllers/recommendation.controller.js) and [Backend/src/services/recommendation.service.js](Backend/src/services/recommendation.service.js)
 
-
+```bash
 ## Repository layout
 
-- Backend
-  - Server entry: [Backend/src/index.js](Backend/src/index.js)
-  - Config: [Backend/src/config/db.js](Backend/src/config/db.js), [Backend/src/config/ai.js](Backend/src/config/ai.js)
-  - Routes: [Backend/src/routes/recommendation.route.js](Backend/src/routes/recommendation.route.js)
-  - Controllers: [Backend/src/controllers/recommendation.controller.js](Backend/src/controllers/recommendation.controller.js)
-  - Models: [Backend/src/models/recommendation.model.js](Backend/src/models/recommendation.model.js)
-  - Services: [Backend/src/services/recommendation.service.js](Backend/src/services/recommendation.service.js), [Backend/src/services/errorHandler.service.js](Backend/src/services/errorHandler.service.js)
-  - Env: [Backend/.env](Backend/.env)
-
-- Frontend
-  - Vite config: [Frontend/vite.config.js](Frontend/vite.config.js)
-  - App entry: [Frontend/src/main.jsx](Frontend/src/main.jsx), [Frontend/src/App.jsx](Frontend/src/App.jsx)
-  - Components: [Frontend/src/components/movieForm.jsx](Frontend/src/components/movieForm.jsx)
-  - API client: [Frontend/src/services/api.js](Frontend/src/services/api.js)
+├── Backend
+│   ├── src
+│   │   ├── index.js                # Server entry point
+│   │   ├── config
+│   │   │   ├── db.js               # Database configuration
+│   │   │   └── ai.js               # AI service configuration
+│   │   ├── routes
+│   │   │   └── recommendation.route.js
+│   │   ├── controllers
+│   │   │   └── recommendation.controller.js
+│   │   ├── services
+│   │   │   ├── recommendation.service.js
+│   │   │   └── errorHandler.service.js
+│   │   └── models
+│   │       └── recommendation.model.js
+│   └── .env                        # Environment variables
+│
+└── Frontend
+    ├── vite.config.js
+    ├── src
+    │   ├── main.jsx
+    │   ├── App.jsx
+    │   ├── components
+    │   │   └── movieForm.jsx
+    │   └── services
+    │       └── api.js
+```
 
 ## Prerequisites
 
