@@ -1,6 +1,13 @@
 # 🎬 Movie Recommendation 
 
 An AI-powered full-stack movie recommendation application built with React (Vite) on the frontend and Node.js (Fastify) on the backend. Users enter their movie preferences, and the system generates personalized movie recommendations using an AI service while persisting results in a database.
+## 📸 Screenshots
+
+| Home Page | Code Generation | Fullscreen Preview |
+|-----------|----------------|-------------------|
+| ![Home](sc/sc1.png) | ![Preview](sc/sc3.png) | ![Code](sc/sc2.png) |
+
+---
 
 ## ✨ Features
 
