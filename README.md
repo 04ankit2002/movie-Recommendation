@@ -5,7 +5,7 @@ An AI-powered full-stack movie recommendation application built with React (Vite
 
 | Home Page | Code Generation | Fullscreen Preview |
 |-----------|----------------|-------------------|
-| ![Home](sc/sc1.png) | ![Preview](sc/sc3.png) | ![Code](sc/sc2.png) |
+| ![Home](sc/home.png) | ![Preview](sc/result.png) | ![Code](sc/code.png) |
 
 ---
 
