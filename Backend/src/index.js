@@ -14,7 +14,7 @@ const app = new Fastify({
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 await app.register(cors, {
-  origin: true, 
+  origin: "https://movie-recommendation-mukl.onrender.com", 
   methods: ["GET", "POST"]
 });
 const PORT = process.env.PORT || 3000;
