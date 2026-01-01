@@ -1,4 +1,4 @@
-const baseUrl = "https://movie-recommendation-mukl.onrender.com/"
+const baseUrl = "https://movie-recommendation-mukl.onrender.com"
 
 export const getMovieRecommendations = async (preference) => {
   const response = await fetch(`${baseUrl}/movies/recommend`, {
