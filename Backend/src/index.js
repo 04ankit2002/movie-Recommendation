@@ -18,10 +18,12 @@ await app.register(cors, {
   methods: ["GET", "POST"]
 });
 const PORT = process.env.PORT || 3000;
+
 app.register(fastifyStatic, {
-  root: path.join(__dirname, "../../frontend/dist"),
-  prefix: "/", // frontend at root
+  root: path.join(__dirname, "../../Frontend/dist"),
+  prefix: "/",
 });
+
 
 app.register(recommendationRoutes, { prefix: '/movies' });
 app.setErrorHandler(errorHandler);
